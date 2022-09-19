@@ -1,0 +1,16 @@
+    1  pwd
+    2  cd /var/log/
+    3  cd ..
+    4  pwd
+    5  ls
+    6  ls -l
+    7  ls -ltr
+    8  cd /
+    9  cd
+   10  cd ..
+   11  man ls
+   12  cd /var
+   13  ls -lSr
+   14  uname -m
+   15  cd 
+   16  history > nicolas_giordano.220918.module2

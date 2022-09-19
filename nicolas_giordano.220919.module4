@@ -1,0 +1,39 @@
+    1  STOCK=AAPL
+    2  echo $STOCK
+    3  STOCK=$STOCK"_US"
+    4  PRICE=290.84
+    5  echo The current price of $STOCK is $PRICE
+    6  WHOAMI=$USER
+    7  echo $WHOAMI
+    8  SERVERTYPE=$(uname)
+    9  echo $SERVERTYPE
+   10  CMD="uname -i"
+   11  echo $CMD
+   12  echo $($CMD)
+   13  cd
+   14  mkdir scripts
+   15  echo $PATH
+   16  PATH=$PATH":/home/ec2-user/scripts"
+   17  echo $PATH
+   18  mkdir Payment1
+   19  cd Payment1/ | mkdir logs configuration scripts
+   20  cd Payment1/
+   21  mkdir logs configuration scripts
+   22  touch scripts/start.sh
+   23  touch configuration/instance.properties
+   24  chmod 744 configuration/instance.properties 
+   25  chmod 771 scripts/start.sh 
+   26  cd
+   27  man cat > cat.output
+   28  chmod 474 cat.output 
+   29  cd
+   30  pwd
+   31  rm -r Payment1/
+   32  rm -i cat.output 
+   33  mkdir temp
+   34  MYTEMP=/home/ec2-user/temp/
+   35  echo $MYTEMP
+   36  $MYTEMP=
+   37  MYTEMP=
+   38  rm -r temp/
+   39  history > nicolas_giordano.220919.module4
