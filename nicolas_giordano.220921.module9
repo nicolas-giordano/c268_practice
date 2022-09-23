@@ -1,0 +1,27 @@
+    1  ls -l
+    2  ./fixGenerator.sh &
+    3  sleep 10
+    4  sleep 500 &
+    5  sleep 700 &
+    6  jobs
+    7  fg %3
+    8  sleep 10 & && echo "hello world"
+    9  jobs
+   10  sleep 10 && echo "hello world" &
+   11  sleep 5; man ls
+   12  grep -v 35=D fixlog* > fixlog.log
+   13  ls -l
+   14  cat fixlog.log
+   15  grep 35=D fixlog.log || grep 35=8 fixlog.log 
+   16  watch date
+   17  ./fixGenerator.sh &
+   18  ls -l
+   19  watch tail -f fixlog20220921172008.log | wc -l
+   20  jobs
+   21  watch $! | wc -l
+   22  ./fixGenerator.sh 
+   23  ls -ls
+   24  rm fixlog20220921172419.log 
+   25  ./fixGenerator.sh &
+   26  watch wc -l fixlog20220921172442.log 
+   27  history > nicolas_giordano.220921.module9

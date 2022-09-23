@@ -1,0 +1,40 @@
+    1  cat fixGenerator.sh 
+    2  cat -n fixGenerator.sh 
+    3  cat fixlog20220921151440.log > newlog.log
+    4  mkdir logs
+    5  mv newlog.log logs/
+    6  cat fixlog20220921151440.log >> logs/newlog.log 
+    7  ln -s logs/newlog.log logs/Daily
+    8  ls logs/
+    9  ls -l logs/
+   10  cd
+   11  cat fixlog20220921151440.log | less
+   12  grep 35=D fixlog20220921151440.log > logs/newOrders.log
+   13  cat logs/newOrders.log 
+   14  cp logs/newOrders.log .
+   15  ls -l
+   16  wc -l newOrders.log 
+   17  grep 54=1 fixlog20220921151440.log > buyMessages.log
+   18  wc -l buyMessages.log 
+   19  grep -c 35=D buyMessages.log 
+   20  grep -v 35=D > logs/noNewOrders.log
+   21  ls logs/
+   22  cat noNewOrders.log
+   23  cat logs/noNewOrders.log 
+   24  rm logs/noNewOrders.log 
+   25  grep -v 35=D fixlog20220921151440.log > logs/noNewOrders.log
+   26  wc -w logs/noNewOrders.log 
+   27  tail -5 logs/noNewOrders.log 
+   28  grep AAPL fixlog20220921151440.log | head -2
+   29  ln -s fixGenerator.sh fix
+   30  tail -f fixlog20220921151440.log 
+   31  mkdir superLogs
+   32  cp -R logs/ superLogs/
+   33  ls logs/; ls superLogs/
+   34  rm -rf superLogs/logs/
+   35  cp -r logs/ superLogs/
+   36  ls logs/; ls superLogs/
+   37  grep -c FB fixlog20220921151440.log 
+   38  wc -w fixlog20220921151440.log 
+   39  grep 35=D fixlog20220921151440.log | grep -c NFLX
+   40  history > nicolas_giordano.220921.module5
